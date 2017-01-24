@@ -7,7 +7,7 @@
  $shop_name = $_POST['shop_name'];
  $city = $_POST['city'];
  
- require_once('include/DB_Connect.php');
+ require_once 'include/DB_Connect.php';
  
  $sql ="SELECT id FROM fertilizer_data ORDER BY id ASC";
  
