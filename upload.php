@@ -11,7 +11,10 @@
  
  $sql ="SELECT id FROM fertilizer_data ORDER BY id ASC";
  
- $res = mysqli_query($con,$sql);
+ if($res = mysqli_query($con,$sql);)
+  echo "Connection ok":
+ else
+  echo "connection fail";
  
  $id = 0;
  
@@ -26,9 +29,13 @@
  $sql = "INSERT INTO fertilizer_data (photo,name1,shop_name,city) VALUES ('$actualpath','$name','$shop_name','$city')";
  
  if(mysqli_query($con,$sql)){
- file_put_contents($path,base64_decode($image));
+ //file_put_contents($path,base64_decode($image));
  echo "Successfully Uploaded";
  }
+  else 
+  {
+  echo "error store";
+  }
  
  mysqli_close($con);
  }else{
