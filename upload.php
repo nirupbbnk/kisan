@@ -21,7 +21,7 @@
  
  $path = "uploads/$id.png";
  
- $actualpath = "http://kisanmitra-env.us-west-2.elasticbeanstalk.com/$path";
+ $actualpath = "http://kisanmitra.gear.host/$path";
  
  $sql = "INSERT INTO fertilizer_data (photo,name,shop_name,city) VALUES ('$actualpath','$name','$shop_name','$city')";
  
