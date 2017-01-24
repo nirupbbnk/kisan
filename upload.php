@@ -23,7 +23,7 @@
  
  $actualpath = "http://kisanmitra.gear.host/$path";
  
- $sql = "INSERT INTO fertilizer_data (photo,name,shop_name,city) VALUES ('$actualpath','$name','$shop_name','$city')";
+ $sql = "INSERT INTO fertilizer_data (photo,name1,shop_name,city) VALUES ('$actualpath','$name','$shop_name','$city')";
  
  if(mysqli_query($con,$sql)){
  file_put_contents($path,base64_decode($image));
